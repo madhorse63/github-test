@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Work+Sans&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+.wrapper{
+    width: 100%;
+    max-width: 1366px;
+    margin: 0 auto;
+    background: #F9F9F9;
+}
+
+.center{
+    width: 100%;
+    max-width: calc(1366px - 57px - 56px);
+    margin: 0 auto;
+}
+
+header{
+    background: #0064EB !important;
+    padding: 16px 0;
+    display: flex;
+    gap: 22px;
+    .logo{
+        margin-left: 41px;
+    }
+    .search{
+        display: flex;
+        gap: 11px;
+        background: #FFFFFF;
+        border-radius: 6px;
+        width: calc(500px - 14px - 14px);
+        padding: 8px 14px;
+        align-items: center;
+        img{
+            width: 14px;
+            height: 14px;
+        }
+        input{
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 17px;
+            display: flex;
+            align-items: center;
+            letter-spacing: 0.01em;
+            color: #000000;
+            width: 100%;
+            height: calc(40px - 8px - 8px);
+        }
+        input:focus{
+            outline: none;
+        }
+    }
+}
+
+.state-wrap{
+    height: calc(100vh - 72px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .state{
+        text-align: center;
+        img{
+            margin-bottom: 46px;
+        }
+        p{
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 22px;
+            line-height: 140%;
+            color: #808080;
+        }
+    }
+}
+
+.user-card{
+    .user-cover{
+        padding-top: 40px;
+        img{
+            width: 280px;
+            height: 280px;
+            border-radius: 140px;
+        }
+    }
+    .user-info{
+        margin-top: 28px;
+        .name{
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 26px;
+            line-height: 130%;
+            color: #000000;
+            text-transform: capitalize;
+        }
+        .user-link{
+            margin-top: 12px;
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 22px;
+            color: #0064EB;
+            text-decoration: none;
+        }
+        .contacts{
+            margin-top: 25px;
+            display: flex;
+            gap: 16px;
+            .contact{
+                display: flex;
+                gap: 8px;
+                align-items: center;
+                p{
+                    font-family: 'Inter';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 150%;
+                    color: #000000;
+                }
+            }
+        }
+    }
+}
+
+.repositiories{
+    padding-top: 28px;
+    flex: 1;
+    padding-bottom: 24px;
+    h3{
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 32px;
+        line-height: 130%;
+        color: #000000;
+        margin-bottom: 29px;
+    }
+    .repositories-wrap{
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        .repo{
+            background: #FFFFFF;
+            border-radius: 6px;
+            padding: 24px 32px;
+            .repo-name{
+                font-family: 'Inter';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 24px;
+                line-height: 29px;
+                color: #0064EB;
+                text-decoration: none;
+            }
+            .repo-descr{
+                font-family: 'Inter';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 19px;
+                color: #000000;
+                margin-top: 16px;
+            }
+        }
+    }
+}
+
+.user-content{
+    display: flex;
+    gap: 85px;
+}
